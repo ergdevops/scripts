@@ -45,11 +45,11 @@ sudo DEBIAN_FRONTEND=noninteractive \
     texinfo unzip w3m xsltproc zip zlib1g-dev lzip \
     libxml-simple-perl libswitch-perl apt-utils rsync \
     ssh openssh-server screen python3 git openjdk-8-jdk android-tools-adb \
-    bc bison build-essential curl flex g++-multilib gcc-multilib gnupg gperf \
-    imagemagick lib32ncurses-dev lib32readline-dev lib32z1-dev  liblz4-tool \
-    libncurses5-dev libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop pngcrush rsync \
+    lib32ncurses-dev lib32readline-dev lib32z1-dev liblz4-tool \
+    libncurses5-dev libsdl1.2-dev lzop pngcrush rsync \
     schedtool ncdu squashfs-tools xsltproc yasm zlib1g-dev libtinfo* \
-    ${PACKAGES}
+    ${PACKAGES} 
+
 
 # Install GitHub CLI
 echo -e "Installing GitHub CLI"
