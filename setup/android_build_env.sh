@@ -31,6 +31,9 @@ elif [[ ${LSB_RELEASE} =~ "Debian GNU/Linux 11" ]]; then
     PACKAGES="${DEBIAN_11_PACKAGES}"
 fi
 
+# Fix python not found issue
+sudo ln -sf /usr/bin/python3 /usr/bin/python
+
 # Install required packages
 sudo DEBIAN_FRONTEND=noninteractive \
     apt install -y \
