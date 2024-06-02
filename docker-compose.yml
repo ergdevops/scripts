@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - /home/ubuntu/rom:/app
+      - /home/erg:/home/erg
     stdin_open: true
     tty: true
 
