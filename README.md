@@ -34,18 +34,11 @@ Before you begin, ensure you have the following software installed:
 docker-compose.yml: update the workspace path on line 9.
 Dockerfile: update the username on line 4 to updated_username.
 
-To build the Docker image, navigate to the project directory and run the following command:
+To build the Docker image, navigate to the project directory
+To set up and run the services using Docker Compose run the following command:
 
 ```bash
-sudo docker build -t scripts-arch-docker .
-```
-
-### Using Docker Compose
-
-To set up and run the services using Docker Compose, use the following command:
-
-```bash
-sudo docker-compose up
+sudo docker-compose up --build -d
 ```
 
 This command will build the images (if not already built) and start the containers defined in the `docker-compose.yml` file.
@@ -59,6 +52,7 @@ Once the containers are up and running, you can interact with them using Docker 
 To access a running container, use the following command:
 
 ```bash
+sudo docker ps
 sudo docker exec -it <container_name> /bin/bash
 ```
 
